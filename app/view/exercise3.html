@@ -7,73 +7,122 @@
 </head>
 
 <body>
+<div class="container">
 
-<h1>Exercise 3</h1>
+    <div class="row">
+        <div class="page-header"><h1>Exercise 3</h1></div>
+    </div>
 
-Add new customer
-<form>
-    <label>First name</label>
-    <input id="firstName" type="text" placeholder="First name">
-    <label>Last name</label>
-    <input id="lastName" type="text" placeholder="Last name">
-    <label>Username</label>
-    <input id="username" type="text" placeholder="Username">
-    <label>Gender</label>
-    <select id="gender">
-        <option>Male</option>
-        <option>Female</option>
-    </select>
+    <div class="row">
+        <div class="col-md-6">
 
-    <label>Discount</label>
-    <input type="radio" name="discount" id="discount1">10%
-    <input type="radio" name="discount" id="discount2">15%
-    <input type="radio" name="discount" id="discount3">20%
-    <label>Other</label>
-    <input type="checkbox" value="">customer card
-    <input type="checkbox" value="">subscription
-    <button>Add customer</button>
-</form>
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Add new customer</h3>
+                </div>
 
-Notifications Panel
-    <a href="#">New Comment <span><em>3 minutes ago</em></span> </a>
-    <a href="#">3 New Rating <span><em>15 minutes ago</em></span> </a>
-    <a href="#">New message<span><em>50 minutes ago</em></span></a>
-    <a href="#">View All Alerts</a>
+                <div class="panel-body">
+                    <form>
+                        <div class="col-md-12" style="padding-top: 10px;">
+                            <div class="form-group">
+                                <label>First name</label>
+                                <input id="firstName" type="text" placeholder="First name" class="form-control">
+                            </div>
+                            <div class="form-group"><label>Last name</label>
+                                <input id="lastName" type="text" placeholder="Last name" class="form-control"></div>
+                            <div class="form-group"><label>Username</label>
+                                <input id="username" type="text" placeholder="Username" class="form-control"></div>
+                            <div class="form-group"><label>Gender</label>
+                                <select id="gender" class="form-control">
+                                    <option>Male</option>
+                                    <option>Female</option>
+                                </select></div>
 
-Customers
-<table>
-    <tr>
-        <th>#</th>
-        <th>First Name</th>
-        <th>Last Name</th>
-        <th>Username</th>
-        <th>Age</th>
-        <th>Gender</th>
-    </tr>
-    <tr>
-        <td>1</td>
-        <td>John</td>
-        <td>Smith</td>
-        <td>@jsmith</td>
-        <td>26</td>
-        <td>M</td>
-    </tr>
-    <tr>
-        <td>2</td>
-        <td>Jacob</td>
-        <td>Thornton</td>
-        <td>@jacob</td>
-        <td>19</td>
-        <td>M</td>
-    </tr>
-    <tr>
-        <td>3</td>
-        <td>Mary</td>
-        <td>Roy</td>
-        <td>@rm</td>
-        <td>42</td>
-        <td>F</td>
-    </tr>
-</table>
+                            <div class="form-group">
+
+                                <p><label>Discount</label></p>
+                                <input type="radio" name="discount" id="discount1" class="radio-inline">10%
+                                <input type="radio" name="discount" id="discount2" class="radio-inline">15%
+                                <input type="radio" name="discount" id="discount3" class="radio-inline">20%
+                            </div>
+                            <div class="form-group">
+                                <p><label>Other</label></p>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" value="">customer card</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" value="">subscription</label>
+                                </div>
+                            </div>
+                            <p class="text-center">
+                                <button type="submit" class="btn btn-primary">Add customer</button>
+                            </p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+
+            <div class="panel panel-warning">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><i class="glyphicon glyphicon-bell"></i> Notifications Panel</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="list-group">
+                        <a href="#" class="list-group-item"><i class="glyphicon glyphicon-comment"></i> New Comment
+                            <span style="float: right;"><em>3 minutes ago</em></span> </a>
+                        <a href="#" class="list-group-item"><i class="glyphicon glyphicon-star"></i> 3 New Rating <span
+                                style="float: right;"><em>15 minutes ago</em></span> </a>
+                        <a href="#" class="list-group-item"><i class="glyphicon glyphicon-envelope"></i> New
+                            message<span style="float: right;"><em>50 minutes ago</em></span></a>
+                    </div>
+                    <a href="#">
+                        <button type="button" class="btn btn-default btn-block"> View All Alerts</button>
+                    </a>
+                </div>
+            </div>
+            <div class="panel panel-success">
+
+                <div class="panel-heading panel-title">Customers</div>
+                <table class="table table-bordered">
+                    <tr>
+                        <th>#</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Username</th>
+                        <th>Age</th>
+                        <th>Gender</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>John</td>
+                        <td>Smith</td>
+                        <td>@jsmith</td>
+                        <td>26</td>
+                        <td>M</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@jacob</td>
+                        <td>19</td>
+                        <td>M</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Mary</td>
+                        <td>Roy</td>
+                        <td>@rm</td>
+                        <td>42</td>
+                        <td>F</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
