@@ -7,73 +7,112 @@
 </head>
 
 <body>
+<div class="container">
 
-<h1>Exercise 3</h1>
 
-Add new customer
-<form>
-    <label>First name</label>
-    <input id="firstName" type="text" placeholder="First name">
-    <label>Last name</label>
-    <input id="lastName" type="text" placeholder="Last name">
-    <label>Username</label>
-    <input id="username" type="text" placeholder="Username">
-    <label>Gender</label>
-    <select id="gender">
-        <option>Male</option>
-        <option>Female</option>
-    </select>
+    <h1>Exercise 3</h1>
+    <hr>
+    <div class="col-md-6">
 
-    <label>Discount</label>
-    <input type="radio" name="discount" id="discount1">10%
-    <input type="radio" name="discount" id="discount2">15%
-    <input type="radio" name="discount" id="discount3">20%
-    <label>Other</label>
-    <input type="checkbox" value="">customer card
-    <input type="checkbox" value="">subscription
-    <button>Add customer</button>
-</form>
+        <div class="panel panel-primary">
+            <div class="panel-heading">Add new customer</div>
+            <div class="panel-body">
+                <form class="form-group">
+                    <label class="row col-md-12">First name</label>
+                    <input class="form-control" id="firstName" type="text" placeholder="First name">
+                    <label class="row col-md-12">Last name</label>
+                    <input class="form-control" id="lastName" type="text" placeholder="Last name">
+                    <label class="row col-md-12">Username</label>
+                    <input class="form-control" id="username" type="text" input disabled="disabled"
+                           placeholder="Username">
+                    <label class="row col-md-12">Gender</label>
+                    <select id="gender" class="form-control">
+                        <option>Male</option>
+                        <option>Female</option>
+                    </select>
 
-Notifications Panel
-    <a href="#">New Comment <span><em>3 minutes ago</em></span> </a>
-    <a href="#">3 New Rating <span><em>15 minutes ago</em></span> </a>
-    <a href="#">New message<span><em>50 minutes ago</em></span></a>
-    <a href="#">View All Alerts</a>
 
-Customers
-<table>
-    <tr>
-        <th>#</th>
-        <th>First Name</th>
-        <th>Last Name</th>
-        <th>Username</th>
-        <th>Age</th>
-        <th>Gender</th>
-    </tr>
-    <tr>
-        <td>1</td>
-        <td>John</td>
-        <td>Smith</td>
-        <td>@jsmith</td>
-        <td>26</td>
-        <td>M</td>
-    </tr>
-    <tr>
-        <td>2</td>
-        <td>Jacob</td>
-        <td>Thornton</td>
-        <td>@jacob</td>
-        <td>19</td>
-        <td>M</td>
-    </tr>
-    <tr>
-        <td>3</td>
-        <td>Mary</td>
-        <td>Roy</td>
-        <td>@rm</td>
-        <td>42</td>
-        <td>F</td>
-    </tr>
-</table>
+                    <div class="form-group">
+                        <div>
+                            <label>Discount</label>
+                        </div>
+                        <input type="radio" name="discount" id="discount1">10%
+                        <input type="radio" name="discount" id="discount2">15%
+                        <input type="radio" name="discount" id="discount3">20%
+                    </div>
+                    <div class="form-group">
+                        <div>
+                            <label>Other</label>
+                        </div>
+                        <p><input type="checkbox" value="">customer card</p>
+                        <input type="checkbox" value="">subscription
+                    </div>
+                    <button class="btn bg-primary center-block">Add customer</button>
+
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class=col-md-6>
+        <div class="panel panel-warning">
+            <div class="panel-heading">Notifications Panel</div>
+            <div class="panel-body">
+
+                <a href="#" class="list-group-item "> <span class="glyphicon glyphicon-comment"
+                                                            aria-hidden="true"></span> New Comment <span
+                        style="float: right"><em>3 minutes ago</em></span> </a>
+                <a href="#" class=" list-group-item "><span class="glyphicon glyphicon-star" aria-hidden="true"></span>3
+                    New Rating <span style="float: right"><em>15 minutes ago</em></span> </a>
+                <a href="#" class="list-group-item  "><span class="glyphicon glyphicon-envelope"
+                                                            aria-hidden="true"></span>New message<span
+                        style="float: right"><em>50 minutes ago</em></span></a>
+                <a href="#" class="list-group-item  text-center" style="margin-top:20px;">View All Alerts</a>
+            </div>
+        </div>
+
+        <div class="panel panel-success">
+            <div class="panel-heading">Customers</div>
+            <table class="table table-striped table-bordered  ">
+                <tr>
+                    <th>#</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Username</th>
+                    <th>Age</th>
+                    <th>Gender</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>John</td>
+                    <td>Smith</td>
+                    <td>@jsmith</td>
+                    <td>26</td>
+                    <td>M</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@jacob</td>
+                    <td>19</td>
+                    <td>M</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Mary</td>
+                    <td>Roy</td>
+                    <td>@rm</td>
+                    <td>42</td>
+                    <td>F</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+</div>
 </body>
 </html>
