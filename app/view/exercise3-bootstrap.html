@@ -2,9 +2,157 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Exercise 3</title>
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="exercise3-bootstrap.css">
 </head>
 <body>
-$END$
+<div class="container">
+
+    <div class="row">
+        <h1>Exercise 3</h1>
+
+        <hr>
+    </div>
+
+    <div class="col-md-6">
+        <div class="panel panel-primary">
+
+            <div class="panel-heading">
+                <h3 class="panel-title">Add new customer</h3>
+            </div>
+
+            <div class="panel-body">
+                <form>
+
+                    <div class="form-group">
+                        <label for="firstname">First name</label>
+                        <input type="text" class="form-control" id="firstname" placeholder="First name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="lastname">Last name</label>
+                        <input type="password" class="form-control" id="lastname" placeholder="Last name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" class="form-control" id="username" placeholder="Username" disabled>
+                    </div>
+                    <div class="form-group">
+                        <label for="select">Gender</label>
+                        <select class="form-control" id="select">
+                            <option>Male</option>
+                            <option>Female</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Discount
+                            <div class="form-group">
+
+                                <label class="radio-inline" for="radio1"><input type="radio" id="radio1"> 10% </label>
+
+                                <label class="radio-inline" for="radio1"><input type="radio" id="radio2"> 15% </label>
+
+                                <label class="radio-inline" for="radio1"><input type="radio" id="radio3"> 20% </label>
+                            </div>
+                        </label>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label> Other</label>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox"> Customer card
+                            </label>
+                            <br>
+                            <label>
+                                <input type="checkbox"> Subscription
+                            </label>
+                        </div>
+                    </div>
+
+                    <button type="Add customer" class="btn btn-primary col-md-offset-5">Add customer</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="panel panel-warning">
+            <div class="panel-heading">
+                <h3 class="panel-title"><span class="glyphicon glyphicon-bell" aria-hidden="true"></span>Notifications panel</h3>
+            </div>
+            <div class="panel-body">
+                <table class="table table-curved">
+                    <tr>
+                        <td><span class="glyphicon glyphicon-comment" aria-hidden="true" ></span>   New Comment <span style="float:right"><i>3 minutes ago</i></span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="glyphicon glyphicon-star" aria-hidden="true"></span>     3 new ratings <span style="float:right"><i>15 minutes ago</i></span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>   New message <span style="float:right"><i>50 minutes ago</i></span></td>
+                    </tr>
+                </table>
+
+                <button class="btn btn-default col-md-12">View all alerts</button>
+
+            </div>
+        </div>
+
+
+        <div class="panel panel-success">
+
+            <div class="panel-heading">Customers</div>
+            <table class="table">
+
+                <tr>
+                    <td>#</td>
+                    <td>First name</td>
+                    <td>Last name</td>
+                    <td>Username</td>
+                    <td>Age</td>
+                    <td>Gender</td>
+                </tr>
+
+                <tr>
+                    <td>1</td>
+                    <td>John</td>
+                    <td>Smith</td>
+                    <td>@jsmith</td>
+                    <td>26</td>
+                    <td>M</td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@jacob</td>
+                    <td>19</td>
+                    <td>M</td>
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td>Mary</td>
+                    <td>Roy</td>
+                    <td>@rm</td>
+                    <td>42</td>
+                    <td>F</td>
+                </tr>
+
+            </table>
+        </div>
+
+
+    </div>
+
+
+</div>
 </body>
 </html>
