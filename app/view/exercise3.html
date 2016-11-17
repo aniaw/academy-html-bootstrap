@@ -4,76 +4,146 @@
     <meta charset="UTF-8">
     <title>Exercise 3</title>
     <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/exercise3.css">
 </head>
 
 <body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="page-header">Exercise 3</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
 
-<h1>Exercise 3</h1>
+                    Add new customer
+                </div>
 
-Add new customer
-<form>
-    <label>First name</label>
-    <input id="firstName" type="text" placeholder="First name">
-    <label>Last name</label>
-    <input id="lastName" type="text" placeholder="Last name">
-    <label>Username</label>
-    <input id="username" type="text" placeholder="Username">
-    <label>Gender</label>
-    <select id="gender">
-        <option>Male</option>
-        <option>Female</option>
-    </select>
+                <div class="panel-body">
 
-    <label>Discount</label>
-    <input type="radio" name="discount" id="discount1">10%
-    <input type="radio" name="discount" id="discount2">15%
-    <input type="radio" name="discount" id="discount3">20%
-    <label>Other</label>
-    <input type="checkbox" value="">customer card
-    <input type="checkbox" value="">subscription
-    <button>Add customer</button>
-</form>
+                    <form role="form">
+                        <div class="form-group">
+                            <label>First name</label>
+                            <input id="firstName" class="form-control" type="text" placeholder="First name">
+                        </div>
+                        <div class="form-group">
+                            <label>Last name</label>
+                            <input id="lastName" class="form-control" type="text" placeholder="Last name">
+                        </div>
+                        <div class="form-group">
 
-Notifications Panel
-    <a href="#">New Comment <span><em>3 minutes ago</em></span> </a>
-    <a href="#">3 New Rating <span><em>15 minutes ago</em></span> </a>
-    <a href="#">New message<span><em>50 minutes ago</em></span></a>
-    <a href="#">View All Alerts</a>
+                            <label>Username</label>
+                            <input id="username" class="form-control" type="text" placeholder="Username" disabled>
+                        </div>
+                        <div class="form-group">
+                            <label>Gender</label>
+                            <select id="gender" class="form-control">
+                                <option>Male</option>
+                                <option>Female</option>
+                            </select>
+                        </div>
 
-Customers
-<table>
-    <tr>
-        <th>#</th>
-        <th>First Name</th>
-        <th>Last Name</th>
-        <th>Username</th>
-        <th>Age</th>
-        <th>Gender</th>
-    </tr>
-    <tr>
-        <td>1</td>
-        <td>John</td>
-        <td>Smith</td>
-        <td>@jsmith</td>
-        <td>26</td>
-        <td>M</td>
-    </tr>
-    <tr>
-        <td>2</td>
-        <td>Jacob</td>
-        <td>Thornton</td>
-        <td>@jacob</td>
-        <td>19</td>
-        <td>M</td>
-    </tr>
-    <tr>
-        <td>3</td>
-        <td>Mary</td>
-        <td>Roy</td>
-        <td>@rm</td>
-        <td>42</td>
-        <td>F</td>
-    </tr>
-</table>
+                        <label>Discount</label>
+
+                        <div class="radio">
+
+                            <label class="radio-inline">
+
+                                <input type="radio" name="discount" id="discount1">10%
+                            </label>
+
+
+                            <label class="radio-inline">
+                                <input type="radio" name="discount" id="discount2">15%
+                            </label>
+
+
+                            <label class="radio-inline">
+                                <input type="radio" name="discount" id="discount3">20%
+                            </label>
+                        </div>
+                        <label>Other</label>
+
+                        <div class="form-group">
+                            <input type="checkbox" value="">customer card<br>
+                            <input type="checkbox" value="">subscription
+                        </div>
+                        <button type="button" class="btn btn-primary center-block">Add customer</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="row">
+                <div class="panel panel-warning">
+                <div class="panel-heading">
+                    <i class="glyphicon glyphicon-bell"></i>
+                    Notifications Panel
+                </div>
+
+                <div class="panel-body">
+                    <div class="list-group">
+                        <button type="button" class="list-group-item glyphicon glyphicon-comment">
+                            <a href="#" class=" text-muted">New Comment<span class="pull-right"><em>3 minutes ago</em></span> </a></button>
+                        <button type="button" class="list-group-item glyphicon glyphicon-star"><a href="#" class="text-muted"> 3 New
+                            Rating<span class="pull-right"><em>15 minutes ago</em></span> </a></button>
+
+                        <button type="button" class="list-group-item glyphicon glyphicon-envelope"><a href="#" class="text-muted"> New
+                            message<span class="pull-right"><em>50minutes ago</em></span></a></button>
+                    </div>
+                    <button type="button" class="btn btn-default btn-md btn-block "><a href="#" class="text-muted">View All Alerts</a>
+                    </button>
+                </div>
+
+            </div>
+            </div>
+            <div class="row">
+                <div class="panel panel-success">
+                    <div class="panel-heading">
+                        Customers
+                    </div>
+                    <table class="table table-bordered">
+                        <tr>
+                            <th>#</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Username</th>
+                            <th>Age</th>
+                            <th>Gender</th>
+                        </tr>
+                        <tr class="active">
+                            <td>1</td>
+                            <td>John</td>
+                            <td>Smith</td>
+                            <td>@jsmith</td>
+                            <td>26</td>
+                            <td>M</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@jacob</td>
+                            <td>19</td>
+                            <td>M</td>
+                        </tr>
+                        <tr class="active">
+                            <td>3</td>
+                            <td>Mary</td>
+                            <td>Roy</td>
+                            <td>@rm</td>
+                            <td>42</td>
+                            <td>F</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
 </body>
 </html>
